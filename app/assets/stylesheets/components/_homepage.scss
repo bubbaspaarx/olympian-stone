@@ -1,0 +1,45 @@
+.description-wrapper {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+}
+
+.olympian-content {
+  color: #3f3f3f;
+  margin: 40px;
+}
+
+
+.photo-wrapper {
+  padding: 50px 0px;
+  text-align: center;
+}
+
+
+.more-button {
+  background-color: #bfbe3d;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+.more-btn-div {
+  text-align: center;
+}
+
+
+.about-title {
+  text-align: center;
+}
+
+
+.location-map {
+  margin-top: 40px;
+  width: 100%;
+  height: 40vh;
+  & .gmap {
+    height: 100%;
+    width: 100%;
+  }
+}
