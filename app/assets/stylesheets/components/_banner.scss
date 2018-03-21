@@ -143,16 +143,20 @@
 }
 
 .call-button {
-color: #fff;
-    border: 1px solid $brand-primary;
-    background-color: $brand-primary;
-    padding: 5px;
-    border-radius: 4px;
+  color: #fff;
+  border: 1px solid $brand-primary;
+  background-color: $brand-primary;
+  padding: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-      text-decoration: none;
-      border: 1px solid #d6d540;
+    border: 1px solid #d6d540;
     background-color: #d6d540;
     color: #f5efc1;
-    }
+  }
+  &:visited {
+  text-decoration: none;
+  color: #f5efc1;
+  }
 }

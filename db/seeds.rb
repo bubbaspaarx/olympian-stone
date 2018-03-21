@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'koala'
+
+@graph = Koala::Facebook::API.new
+
+profile = @graph.get_object("me/photos?fields=height,width,link")
+
+puts profile
