@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   background: #4e4e4e;
-  height: 200px;
+  height: 26vmin;
 }
 
 .footer {
@@ -31,11 +31,12 @@
   font-size: 18px;
   position: absolute;
   left: 10px;
-  bottom: 20px;
+  bottom: 10px;
   list-style: none;
 }
 
 .footer-copyright {
+  font-size: 2vmin;
   position: absolute;
   right: 10px;
   bottom: 10px;

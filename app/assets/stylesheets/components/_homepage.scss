@@ -1,3 +1,7 @@
+p { font-size: 3vmin;
+}
+h2 { font-size: 6vmin; }
+
 .description-wrapper {
   background-color: #fff;
   width: 100%;
@@ -8,6 +12,10 @@
 .olympian-content {
   color: #3f3f3f;
   margin: 40px;
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
 }
 
 
@@ -41,5 +49,15 @@
   & .gmap {
     height: 100%;
     width: 100%;
+  }
+}
+
+.olympian-logo {
+  height: 13vmin;
+}
+
+.address {
+  li {
+    font-size: 2vmin;
   }
 }
