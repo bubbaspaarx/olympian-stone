@@ -8,39 +8,65 @@
       <a class="call-button" href="tel:07555-238606">
        Call us<span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>07555 238606</a>
        <div class="arrow-container">
-        <a href="#gallery">
+        <a href="#about">
           <div class="down-arrow">
             <i class="fa fa-angle-down"></i>
           </div>
         </a>
       </div>
+    </div>
+  </div>
+</div>
+
+<div id="about"></div>
+
+<div class="description-wrapper">
+ <div class="container-fluid">
+  <div class="row">
+    <div class="about-title">
+      <h2>Who are Olympian Stone</h2>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div class="olympian-content text-center">
+       <p>Olympian Stone, based in Deal, Kent are suppliers and installers of natural stone.</p>
+       <p>We specialize in Quartz, Granite, Marble, Limestone and slate manufactured to your specifications.</p>
+       <p>We also work with marble plaster and polished concrete floors and worktops.</p>
      </div>
    </div>
  </div>
-
- <div id="about"></div>
-
- <div class="description-wrapper">
-   <div class="container-fluid">
-    <div class="row">
-      <div class="about-title">
-        <h2>Who are Olympian Stone</h2>
-      </div>
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <div class="olympian-content text-center">
-         <p>Olympian Stone, based in Deal, Kent are suppliers and installers of natural stone.</p>
-         <p>We specialize in Quartz, Granite, Marble, Limestone and slate manufactured to your specifications.</p>
-         <p>We also work with marble plaster and polished concrete floors and worktops.</p>
-       </div>
-     </div>
-   </div>
- </div>
+</div>
 </div>
 
 <div class="testimonial-wrapper">
   <%= render 'shared/testimonial-slider' %>
 </div>
-
+<div id="stone" class="stone-companiy-wrapper text-center">
+<h2>Check out our stone ranges</h2>
+  <div class="container-fluid">
+    <div class="row stone-companies">
+      <div class="stone silestone col-xs-3" style="background-image: url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1522089622/silestone.jpg" %>');">
+        <a href="https://www.silestone.co.uk/colours/"><span class="span"></span></a>
+        <div class="overlay">
+        </div>
+      </div>
+      <div class="stone mfs-stone col-xs-3" style="background-image: url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1522089622/MFS.png" %>');">
+        <a href="http://marbleflooring.co.uk/stone-range/"><span class="span"></span></a>
+        <div class="overlay">
+        </div>
+      </div>
+      <div class="stone caesarstone col-xs-3" style="background-image: url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1522089622/Caesarstone.png" %>');">
+        <a href="http://www.caesarstone.co.uk/catalogue/"><span class="span"></span></a>
+        <div class="overlay">
+        </div>
+      </div>
+      <div class="stone msi-stone col-xs-3" style="background-image: url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1522089621/MSI.png" %>');">
+        <a href="https://www.msistone.com/countertops/"><span class="span"></span></a>
+        <div class="overlay">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <%= render 'shared/photo-generator' %>
 
 <div class="location-map">
