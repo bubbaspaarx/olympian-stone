@@ -1,9 +1,9 @@
 
 <div id="banner3" class="second-banner">
   <%= render 'shared/navbar' %>
-  <div id="home" class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1521813669/kitchen.jpg" %>');">
+  <div id="home" class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/c_scale,h_1494,y_0/v1522071947/kitchen.jpg" %>');">
     <div class="banner-content">
-      <%= image_tag "olympian-logo-2.png", class: "olympian-logo" %>
+      <%= image_tag "olympian-stone-logo.png", class: "olympian-logo" %>
       <p>The Premier Stonemasons of Kent</p>
       <a class="call-button" href="tel:07555-238606">
        Call us<span class="glyphicon glyphicon-earphone" style="padding-left:10px; padding-right:10px;"></span>07555 238606</a>
@@ -21,13 +21,13 @@
  <div id="about"></div>
 
  <div class="description-wrapper">
-   <div class="container-1">
+   <div class="container-fluid">
     <div class="row">
       <div class="about-title">
-        <h2>Who are Olympian Stones</h2>
+        <h2>Who are Olympian Stone</h2>
       </div>
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        <div class="olympian-content">
+        <div class="olympian-content text-center">
          <p>Olympian Stone, based in Deal, Kent are suppliers and installers of natural stone.</p>
          <p>We specialize in Quartz, Granite, Marble, Limestone and slate manufactured to your specifications.</p>
          <p>We also work with marble plaster and polished concrete floors and worktops.</p>
@@ -35,6 +35,10 @@
      </div>
    </div>
  </div>
+</div>
+
+<div class="testimonial-wrapper">
+  <%= render 'shared/testimonial-slider' %>
 </div>
 
 <%= render 'shared/photo-generator' %>

@@ -1,6 +1,11 @@
-p { font-size: 3vmin;
+p {
+  font-size: 3vmin;
+  color: #3f3f3f;
 }
-h2 { font-size: 6vmin; }
+h2 {
+  font-size: 6vmin;
+  color: #6d6c6c;
+}
 
 .description-wrapper {
   background-color: #fff;
@@ -13,8 +18,7 @@ h2 { font-size: 6vmin; }
   color: #3f3f3f;
   margin: 40px;
   p {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: center;
   }
 }
 
@@ -26,7 +30,7 @@ h2 { font-size: 6vmin; }
 
 
 .more-button {
-  background-color: #bfbe3d;
+  background-color: $brand-primary;
   color: #fff;
   padding: 5px 20px;
   border-radius: 4px;
@@ -53,7 +57,7 @@ h2 { font-size: 6vmin; }
 }
 
 .olympian-logo {
-  height: 13vmin;
+  height: 25vmin;
 }
 
 .address {
