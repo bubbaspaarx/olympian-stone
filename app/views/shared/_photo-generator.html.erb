@@ -1,26 +1,27 @@
 <div class="photo-wrapper" id="photos">
-  <div class="row">
-    <h2>Client photos</h2>
-    <% photos = Photo.all %>
-    <% photos[0..8].each do |photo| %>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="olympian-photos" style="background-image: url(<%= image_path photo.photo %>)">
+  <div class="container-fluid">
+    <div class="row">
+      <h2>Client photos</h2>
+      <% photos = Photo.all %>
+      <% photos[0..8].each do |photo| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="olympian-photos" style="background-image: url(<%= image_path photo.photo %>)">
+        </div>
+      </div>
+      <% end %>
+      <div class="more-btn-div">
+        <button class="more-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          See more
+        </button>
+      </div>
+      <div class="collapse" id="collapseExample" style="overflow: hidden;">
+        <% photos[9..-1].each do |photo| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="olympian-photos" style="background-image: url(<%= image_path photo.photo %>)">
+          </div>
+        </div>
+        <% end %>
       </div>
     </div>
-    <% end %>
   </div>
-</div>
-
-<div class="more-btn-div">
-  <button class="more-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    See more
-  </button>
-</div>
-<div class="collapse" id="collapseExample" style="overflow: hidden;">
-  <% photos[9..-1].each do |photo| %>
-  <div class="col-xs-12 col-sm-6 col-md-4">
-    <div class="olympian-photos" style="background-image: url(<%= image_path photo.photo %>)">
-    </div>
-  </div>
-  <% end %>
 </div>
