@@ -16,5 +16,5 @@ $(document).ready(function(){
      pagenum++;
    }
  }
- setInterval(AutoRotate, 2500);
+ setInterval(AutoRotate, 3600);
 });

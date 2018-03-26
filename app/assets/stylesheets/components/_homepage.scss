@@ -65,3 +65,50 @@ h2 {
     font-size: 2vmin;
   }
 }
+
+.stone {
+  height: 300px;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:hover .overlay {
+  transform: none;
+  }
+}
+
+.stone-companiy-wrapper {
+  background-color: #fff;
+  padding: 50px 0px;
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+
+.span {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 0.2;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform:scale(0);
+  transition: .3s ease;
+}
+
+
+
+
