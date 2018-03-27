@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+    $('.dropdown-toggle').dropdown();
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
