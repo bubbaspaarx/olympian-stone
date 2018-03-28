@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Olympian Stone</title>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-  </head>
-  <body>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Olympian Stone | beautiful solid stone worktops - Est 2003 </title>
+  <meta name="description" content="Olympian Stone Ltd supply and fit all quartz, granite, marble and slate worktops. Based in Deal, Kent for 15 years.">
+  <meta property="og:title" content="Olympian Stone | beautiful solid stone worktops - Est 2003">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.olympianstone.co.uk/">
+  <meta property="og:image" content="http://res.cloudinary.com/montycat/image/upload/v1522232071/olympian-stone-og.png">
+  <meta property="og:description" content="Olympian Stone Ltd supply and fit all quartz, granite, marble and slate worktops. Based in Deal, Kent for 15 years.">
+  <meta property="og:site_name" content="Olympian Stone">
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+</head>
+<body>
+  <%= yield %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_pack_tag 'application' %>
+</body>
 </html>
